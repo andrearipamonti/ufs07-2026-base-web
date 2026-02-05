@@ -1,0 +1,45 @@
+/*
+body {
+    background-color: red;
+}
+
+body {
+    background-color: blue;
+}
+*/
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.site-logo {
+    max-width: 64px;
+}
+
+.site-navigation ul {
+    display: flex;
+    gap: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    color: red;
+}
+
+.media-text {
+    display: flex;
+    min-height: 500px;
+}
+
+.media-text-box {
+    background-color: green;
+    border: 1px solid black;
+    flex-grow: 1;
+}
