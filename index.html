@@ -10,6 +10,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Base Web</title>
 		
+
+		<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> -->
+
+		<link rel="stylesheet" href="fonts/lato/stylesheet.css">
 		<link rel="stylesheet" href="styles/reset.css">
 		<link rel="stylesheet" href="styles/main.css">
 
@@ -44,16 +50,44 @@
 
 		<main>
 
-			<section>
+			<!-- <section>
 				<h1>Benvenuti nel nostro sito web!</h1>
 				<h2>Pay-off del brand</h2>
 				<h3>Occhiello</h3>
 				<p>Questo è un esempio di struttura base di una pagina HTML.</p>
+			</section> -->
+
+			<section class="hero hero-100vh hero-post-malone">
+				<div class="hero-overlay-content">
+					<h1 class="title">Post Malone</h1>
+					<p class="copy">Post Malone in concerto a Milano ad Agosto 2025</p>
+					<a href="" title="Sfoglia la gallery" class="btn">Sfoglia la gallery</a>
+				</div>
+			</section>
+			<section class="hero hero-100vh hero-raye">
+				<div class="hero-overlay-content">
+					<h1 class="title">RAYE</h1>
+					<p class="copy">RAYE in concerto a Bologna a Gennaio 2026</p>
+					<a href="" title="Sfoglia la gallery" class="btn">Sfoglia la gallery</a>
+				</div>
 			</section>
 
 			<section class="media-text">
-				<div class="media-text-box"></div>
-				<div class="media-text-box"></div>
+				<div class="media-text-box hero hero-post-malone"></div>
+				<div class="media-text-box media-text-box-content">
+					<h2 class="title">Post Malone</h2>
+					<p class="copy">Post Malone in concerto a Milano ad Agosto 2025</p>
+					<a href="" title="Sfoglia la gallery" class="btn">Sfoglia la gallery</a>
+				</div>
+			</section>
+
+			<section class="media-text">
+				<div class="media-text-box media-text-box-content">
+					<h2 class="title">Post Malone</h2>
+					<p class="copy">Post Malone in concerto a Milano ad Agosto 2025</p>
+					<a href="" title="Sfoglia la gallery" class="btn">Sfoglia la gallery</a>
+				</div>
+				<div class="media-text-box hero hero-post-malone"></div>
 			</section>
 
 		</main>

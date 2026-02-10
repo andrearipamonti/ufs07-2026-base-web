@@ -8,7 +8,14 @@ body {
 }
 */
 
+body {
+    font-family: "Lato", sans-serif;
+}
+
 .site-header {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -39,7 +46,98 @@ a:hover {
 }
 
 .media-text-box {
-    background-color: green;
-    border: 1px solid black;
-    flex-grow: 1;
+    flex-grow: 1; /* cresce di uno */
+    flex-shrink: 1; /* diminuisce di uno */
+    flex-basis: 50%; /* occupa il 50% dello spazio disponibile */
 }
+
+.media-text-box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.media-text-box-content .title {
+    font-size: 32px;
+    margin-bottom: 0.75em;
+}
+
+.media-text-box-content .copy {
+    font-size: 18px;
+    margin-bottom: 0.5em;
+}
+
+/* 
+    HERO SECTION
+    https://www.w3schools.com/howto/howto_css_hero_image.asp
+*/
+.hero {
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .hero-overlay-content {
+    text-align: center;
+    padding: 1em;
+}
+
+/* Elemento con classe title dentro ad un elemento con classe hero */
+.hero .title {
+    font-size: 48px;
+    margin-bottom: 1em; /* 48px */
+}
+
+
+/* Elemento con classe copy dentro ad un elemento con classe hero */
+.hero .copy {
+    font-size: 18px;
+    margin-bottom: 1.5em; /* 27px */
+}
+
+/* Elemento con classe Hero e ANCHE classe hero-100vh */
+.hero.hero-100vh {
+    height: 100vh; /* Altezza piena della viewport */
+    min-height: 720px; /* Altezza minima */
+}
+
+.hero.hero-75vh {
+    height: 75vh; /* Altezza piena della viewport */
+    min-height: 580px; /* Altezza minima */
+}
+
+
+/* Diverse immagini di sfondo */
+.hero.hero-post-malone {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/post-malone.webp");
+}
+
+.hero.hero-raye {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/raye.webp");
+}
+/* END Diverse immagini di sfondo */
+
+
+/* A Button styled link */
+.btn {
+    background-color: #302e2e;
+    color: white;
+    padding: 0.5em 1em;
+    display: inline-block;
+    border-radius: 2em;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    color: white;
+    background-color: red;
+}
+
+/* A Button styled link */
